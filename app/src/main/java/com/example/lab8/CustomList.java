@@ -80,15 +80,15 @@ public class CustomList extends ArrayAdapter<City> {
 
     public void deleteCity(String cityName) {
         boolean cityFound;
-//        cities.add(new City("Estevan", "SK"));
-//        if (!cities.isEmpty()) {
-//            for (City city : cities) {
-//                if (city.getCityName().equals(cityName)) {
-//                    cities.remove(city);
-//                    cityFound = true;
-//                }
-//            }
-//        }
+        cities.add(new City("Estevan", "SK"));
+        if (!cities.isEmpty()) {
+            for (City city : cities) {
+                if (city.getCityName().equals(cityName)) {
+                    cities.remove(city);
+                    cityFound = true;
+                }
+            }
+        }
         cityFound = false;
     }
 }
