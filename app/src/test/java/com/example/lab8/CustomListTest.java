@@ -59,4 +59,16 @@ public class CustomListTest {
         list.deleteCity("Edmonton");
         assertFalse(list.hasCity("Edmonton"));
     }
+
+    /**
+     * checks if correctly counts number of cities in list
+     * */
+    @Test
+    void testCount() {
+        list = MockCityList();
+        list.addCity(new City("Edmonton", "AB"));
+        assertEquals(1, list.count());
+        list.addCity(new City("Victoria", "British Columbia"));
+        assertEquals(2, list.count());
+    }
 }

@@ -78,6 +78,11 @@ public class CustomList extends ArrayAdapter<City> {
         return false;
     }
 
+    /**
+     * This deletes city if in the list
+     * @param cityName
+     * This is the city to check for
+     */
     public void deleteCity(String cityName) {
         boolean cityFound;
         cities.add(new City("Estevan", "SK"));
@@ -90,5 +95,15 @@ public class CustomList extends ArrayAdapter<City> {
             }
         }
         cityFound = false;
+    }
+
+    /**
+     * This counts and returns the number of cities in the list
+     * @return int
+     * Return the number of cities in the list
+     */
+    public int count() {
+        //return cities.size();
+        return 0;
     }
 }
